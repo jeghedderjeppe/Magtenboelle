@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Event_Oprettelse_Tilmelding
 {
-    class CreateEventClass
+    public class CreateEventClass
     {
         //constructor
         public CreateEventClass(int id, string name, int date, int numberOfParticipant, double pricePrPerson)

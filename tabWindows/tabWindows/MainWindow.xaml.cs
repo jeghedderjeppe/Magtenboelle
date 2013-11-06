@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Event_Oprettelse_Tilmelding;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,10 @@ namespace tabWindows
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {   //liste til at holle alle instanser af Customer klassen
         List<Customer> customerList = new List<Customer>();
+        //liste til at holde alle instanser af CreateEventKlassen
+        List<CreateEventClass> eventRservationsListe = new List<CreateEventClass>();
         byte age = 0;
         public MainWindow()
         {
@@ -130,6 +133,14 @@ namespace tabWindows
             Customer customer = listBCustomers.SelectedItem as Customer;
             customerList.Remove(customer);
             listBCustomers.Items.Refresh();
+        }
+
+        private void btnOpretEvent_Click(object sender, RoutedEventArgs e)
+        {
+            CreateEventClass newEvent = new CreateEventClass(int.Parse(txtEventId.Text), txtEventNavn.Text, int.Parse(txtEventDato.Text), int.Parse(txtEventMaxDeltagere.Text), double.Parse(txtEventPrisPerPerson.Text));
+            eventRservationsListe.Add(newEvent);
+            //SaveEventReservationToTxtFile();
+
         }
         //New User Controls Ends......
     }
