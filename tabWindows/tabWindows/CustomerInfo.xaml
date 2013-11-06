@@ -1,0 +1,29 @@
+﻿<Window x:Class="tabWindows.CustomerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomerInfo" Height="600" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="451*"/>
+            <RowDefinition Height="119*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Adresse:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,98,0,0"/>
+        <Label Content="E-mail:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,319,0,0"/>
+        <Label Content="Postnummer:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,211,0,0"/>
+        <Label Content="By:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,152,0,0"/>
+        <Label Content="Telefonnummer:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,265,0,0"/>
+        <Label Content="Fulde navn:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,39,0,0" Width="70"/>
+        <TextBox x:Name="txtEditUserPhoneNum" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,291,0,0"/>
+        <TextBox x:Name="txtEditUserEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,350,0,0"/>
+        <TextBox x:Name="txtEditUserZipCode" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,237,0,0"/>
+        <TextBox x:Name="txtEditUserCity" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,183,0,0"/>
+        <TextBox x:Name="txtEditUserAddress" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,124,0,0"/>
+        <TextBox x:Name="txtEditUserFullName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,70,0,0"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="196,445,0,0" RenderTransformOrigin="-1.253,9.1" Grid.RowSpan="2"/>
+        <Button x:Name="btnSaveEditedUserInfo" Content="Gem ændring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="106,445,0,0" Click="btnSaveEditedUserInfo_Click" Grid.RowSpan="2"/>
+        <Label Content="Alder:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,386,0,0"/>
+        <TextBox x:Name="txtEditUserAge" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,417,0,0"/>
+
+    </Grid>
+</Window>
+
