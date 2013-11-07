@@ -143,6 +143,18 @@ namespace tabWindows
             //SaveEventReservationToTxtFile();
 
         }
+
+     
+
+        private void btnCalenderShow_Click(object sender, RoutedEventArgs e)
+        {
+
+            EventRegistrationClass registration = new EventRegistrationClass("Henrik", 55 , 150, "dddd");
+            listBoxCalender.Items.Add(registration);
+
+           
+           
+        }
         //New User Controls Ends......
     }
 }
