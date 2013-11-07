@@ -35,6 +35,7 @@ namespace tabWindows
             customerList.Add(jens);
             listBCustomers.ItemsSource = customerList;
         }
+		//Dette er lavet af Simon
         //New User Controls....
         private void CbboxNewUserAge_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
