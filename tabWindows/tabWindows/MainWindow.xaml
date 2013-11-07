@@ -6,17 +6,21 @@
         <TabControl HorizontalAlignment="Left" Height="700" VerticalAlignment="Top" Width="892" Margin="0,0,0,-80">
             <TabItem Header="Kundekartotek">
                 <Grid Background="#FFE5E5E5" Margin="0,11,0,-11">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="83*"/>
+                        <ColumnDefinition Width="211*"/>
+                    </Grid.ColumnDefinitions>
                     <Label Content="Full Name" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.563,-1.223"/>
                     <TextBox x:Name="txtNewUserFullName" HorizontalAlignment="Left" Height="23" Margin="20,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserFullName_TextChanged"/>
                     <Label Content="New User" HorizontalAlignment="Left" Margin="20,28,0,0" VerticalAlignment="Top" Width="133" Height="57"/>
                     <Label Content="Adress" HorizontalAlignment="Left" Margin="20,146,0,0" VerticalAlignment="Top"/>
-                    <Label Content="Telephone / Mobile" HorizontalAlignment="Left" Margin="300,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.407,1.409"/>
+                    <Label Content="Telephone / Mobile" HorizontalAlignment="Left" Margin="50.791,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.407,1.409" Grid.Column="1"/>
                     <TextBox x:Name="txtNewUserAdress" HorizontalAlignment="Left" Height="23" Margin="20,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserAdress_TextChanged"/>
-                    <TextBox x:Name="txtNewUserTelehone" HorizontalAlignment="Left" Height="23" Margin="300,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserTelehone_TextChanged"/>
-                    <Label Content="Email" HorizontalAlignment="Left" Margin="300,146,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txtNewUserEmail" HorizontalAlignment="Left" Height="23" Margin="300,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserEmail_TextChanged"/>
-                    <Label Content="Age" HorizontalAlignment="Left" Margin="300,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.411,0.27"/>
-                    <ComboBox x:Name="CbboxNewUserAge" HorizontalAlignment="Left" Margin="300,240,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbboxNewUserAge_SelectionChanged">
+                    <TextBox x:Name="txtNewUserTelehone" HorizontalAlignment="Left" Height="23" Margin="50.791,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserTelehone_TextChanged" Grid.Column="1"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="50.791,146,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox x:Name="txtNewUserEmail" HorizontalAlignment="Left" Height="23" Margin="50.791,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserEmail_TextChanged" Grid.Column="1"/>
+                    <Label Content="Age" HorizontalAlignment="Left" Margin="50.791,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.411,0.27" Grid.Column="1"/>
+                    <ComboBox x:Name="CbboxNewUserAge" HorizontalAlignment="Left" Margin="50.791,240,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbboxNewUserAge_SelectionChanged" Grid.Column="1">
                         <ComboBoxItem Content="[18-35]"/>
                         <ComboBoxItem Content="[36-49]"/>
                         <ComboBoxItem Content="[50+]"/>
@@ -26,13 +30,14 @@
                     <TextBox x:Name="txtNewUserCity" HorizontalAlignment="Left" Height="23" Margin="20,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserCity_TextChanged"/>
                     <Label Content="Zip Code" HorizontalAlignment="Left" Margin="20,268,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.039,0.099"/>
                     <TextBox x:Name="txtNewUserZipCode" HorizontalAlignment="Left" Height="23" Margin="20,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtNewUserZipCode_TextChanged"/>
-                    <Button x:Name="btnSaveUser" Content="Save User" HorizontalAlignment="Left" Margin="300,296,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveUser_Click"/>
-                    <Button x:Name="btnExitNewUser" Content="Exit" HorizontalAlignment="Left" Margin="389,296,0,0" VerticalAlignment="Top" Width="75" Click="btnExitNewUser_Click"/>
-                    <ListBox x:Name="listBCustomers" HorizontalAlignment="Left" Height="160" Margin="52,343,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="listBCustomers_SelectionChanged"/>
-                    <Button x:Name="btnRemoveCustomer" Content="Fjern Kunde" HorizontalAlignment="Left" Margin="231,525,0,0" VerticalAlignment="Top" Width="75" Click="btnRemoveCustomer_Click"/>
+                    <Button x:Name="btnSaveUser" Content="Save User" HorizontalAlignment="Left" Margin="50.791,296,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveUser_Click" Grid.Column="1"/>
+                    <Button x:Name="btnExitNewUser" Content="Exit" HorizontalAlignment="Left" Margin="139.791,296,0,0" VerticalAlignment="Top" Width="75" Click="btnExitNewUser_Click" Grid.Column="1"/>
+                    <ListBox x:Name="listBCustomers" HorizontalAlignment="Left" Height="160" Margin="52,343,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="listBCustomers_SelectionChanged" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btnRemoveCustomer" Content="Fjern Kunde" HorizontalAlignment="Left" Margin="231,525,0,0" VerticalAlignment="Top" Width="75" Click="btnRemoveCustomer_Click" Grid.ColumnSpan="2"/>
                     <Button x:Name="btnShowCustomerInfo" Content="Vis/opdater Kundes Info" HorizontalAlignment="Left" Margin="89,525,0,0" VerticalAlignment="Top" Width="137" Click="btnShowCustomerInfo_Click"/>
                 </Grid>
             </TabItem>
+            <!-- 
             <TabItem Header="Kalender">
                 <Grid Background="#FFE5E5E5">
                     <Grid Margin="0,0,0,3">
@@ -66,6 +71,15 @@
                         </StackPanel>
 
                     </Grid>
+                </Grid>
+            </TabItem>
+            -->
+            <TabItem Header="Kalender">
+                <Grid>
+                    <ListBox x:Name="listBoxCalender" HorizontalAlignment="Left" Height="251" Margin="28,110,0,0" VerticalAlignment="Top" Width="757" Background="#FFB2B2B2"/>
+                    <Label Content="All  Events &amp; Reservationer" HorizontalAlignment="Left" Margin="28,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.31,0.591" Width="757" Height="45" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button x:Name="btnCalenderShow" Content="Show Events And Reservations" HorizontalAlignment="Left" Margin="28,366,0,0" VerticalAlignment="Top" Width="221" Height="36" FontFamily="Arial Black" Click="btnCalenderShow_Click"/>
+
                 </Grid>
             </TabItem>
             <TabItem Header="Reservation">
