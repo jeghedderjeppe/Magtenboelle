@@ -29,7 +29,7 @@ namespace tabWindows
         {
             InitializeComponent();
             
-            Customer lars = new Customer("lars", "Odensevej 17", 5000, "Odense", 23, 47583928, "lars@gmail.com");
+            Customer lars = new Customer("anders", "Odensevej 17", 5000, "Odense", 23, 47583928, "lars@gmail.com");
             Customer jens = new Customer("jens", "Vejlevej 2", 5000, "Odense", 45, 83619374, "jens@gmail.com");
             customerList.Add(lars);
             customerList.Add(jens);
