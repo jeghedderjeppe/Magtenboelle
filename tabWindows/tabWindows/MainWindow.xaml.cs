@@ -154,26 +154,19 @@ namespace tabWindows
             {
                 using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
                 {
-                    String line = sr.ReadToEnd();
-                    Console.WriteLine(line);
-                    listBoxCalender.Items.Add(line);
+                    string line = sr.ReadToEnd(); //Declare line variable and sets ReadToEnd to it
+                    Console.WriteLine(line);//Write string line to the end
+                    listBoxCalender.Items.Add(line);//Add our string "line" to listbox
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("FAIL");
+                MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
                
             }
             
             
-            //Creat a StreamReader Connected to a file
-           
-
-
-          //  EventRegistrationClass registration = new EventRegistrationClass("Henrik", 55 , 150, "dddd");
-           // listBoxCalender.Items.Add(registration);
-
-           
+        
            
         }
         //New User Controls Ends......
