@@ -89,24 +89,25 @@
 
                 <Grid Background="#FFE5E5E5" Margin="0,-2,0,-53">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="118*"/>
-                        <ColumnDefinition Width="273*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="78*"/>
+                        <ColumnDefinition Width="308*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="Max. antal deltagere:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,290,0,0" Height="23" Width="113"/>
+                    <Label Content="Max. antal deltagere:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,290,0,0" Height="23" Width="113" Grid.ColumnSpan="2"/>
                     <Label Content="Dato:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,175,0,0" RenderTransformOrigin="0.973,0.575" Height="23" Width="37"/>
                     <Label Content="Navn:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,124,0,0" Height="23" Width="39" RenderTransformOrigin="1.004,0.438"/>
                     <Label Content="ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,70,0,0" Height="23" Width="25" RenderTransformOrigin="-0.584,0.644"/>
-                    <Label Content="Opret Event" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,33,0,0" Width="93" FontFamily="Arial black" FontSize="12" Height="24"/>
-                    <TextBox x:Name="txtEventMaxDeltagere" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,318,0,0"/>
-                    <TextBox x:Name="txtEventDato" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,203,0,0"/>
-                    <TextBox x:Name="txtEventNavn" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,152,0,0"/>
-                    <TextBox x:Name="txtEventId" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,98,0,0"/>
-                    <Label Content="Pris per person:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,346,0,0" Height="26" Width="87"/>
-                    <TextBox x:Name="txtEventPrisPerPerson" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,377,0,0"/>
-                    <Button x:Name="btnOpretEvent" Content="Opret event" HorizontalAlignment="Left" Margin="73,405,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnOpretEvent_Click"/>
-                    <Label x:Name="txtEventDeltagerPris" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,212,0,0" Width="58" Grid.Column="1" Height="23"/>
-                    <Label Content="Type:" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Width="120"/>
-                    <TextBox x:Name="txtEventType" HorizontalAlignment="Left" Height="23" Margin="28,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Opret Event" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,33,0,0" Width="93" FontFamily="Arial black" FontSize="12" Height="24" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventMaxDeltagere" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,318,0,0" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventDato" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,203,0,0" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventNavn" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,152,0,0" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventId" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,98,0,0" Grid.ColumnSpan="2"/>
+                    <Label Content="Pris per person:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,346,0,0" Height="26" Width="87" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventPrisPerPerson" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="28,377,0,0" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btnOpretEvent" Content="Opret event" HorizontalAlignment="Left" Margin="73,405,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="btnOpretEvent_Click" Grid.ColumnSpan="2"/>
+                    <Label x:Name="txtEventDeltagerPris" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,212,0,0" Width="58" Grid.Column="2" Height="23"/>
+                    <Label Content="Type:" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="txtEventType" HorizontalAlignment="Left" Height="23" Margin="28,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
                 </Grid>
 
             </TabItem>

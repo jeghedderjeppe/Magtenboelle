@@ -1,6 +1,7 @@
 ﻿using Event_Oprettelse_Tilmelding;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -149,8 +150,28 @@ namespace tabWindows
         private void btnCalenderShow_Click(object sender, RoutedEventArgs e)
         {
 
-            EventRegistrationClass registration = new EventRegistrationClass("Henrik", 55 , 150, "dddd");
-            listBoxCalender.Items.Add(registration);
+            try
+            {
+                using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
+                {
+                    String line = sr.ReadToEnd();
+                    Console.WriteLine(line);
+                    listBoxCalender.Items.Add(line);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("FAIL");
+               
+            }
+            
+            
+            //Creat a StreamReader Connected to a file
+           
+
+
+          //  EventRegistrationClass registration = new EventRegistrationClass("Henrik", 55 , 150, "dddd");
+           // listBoxCalender.Items.Add(registration);
 
            
            

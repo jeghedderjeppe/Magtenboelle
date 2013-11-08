@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Event_Oprettelse_Tilmelding
 {
-    class EventRegistrationClass
+    
+    public class EventRegistrationClass
     {
         //constructor
         public EventRegistrationClass(string name, int numberOfParticipant, double pricePrPerson, string suggestion)
