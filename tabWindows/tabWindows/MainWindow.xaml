@@ -78,8 +78,8 @@
                 <Grid>
                     <ListBox x:Name="listBoxCalender" HorizontalAlignment="Left" Height="251" Margin="28,110,0,0" VerticalAlignment="Top" Width="757" Background="#FFB2B2B2"/>
                     <Label Content="All  Events &amp; Reservationer" HorizontalAlignment="Left" Margin="28,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.31,0.591" Width="757" Height="45" FontFamily="Arial Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    <Button x:Name="btnCalenderShow" Content="Show Events And Reservations" HorizontalAlignment="Left" Margin="28,366,0,0" VerticalAlignment="Top" Width="221" Height="36" FontFamily="Arial Black" Click="btnCalenderShow_Click"/>
-
+                    <Button x:Name="btnCalenderShowEvents" Content="Load All Events" HorizontalAlignment="Left" Margin="28,366,0,0" VerticalAlignment="Top" Width="221" Height="36" FontFamily="Arial Black" Click="btnCalenderShowEvents_Click"/>
+                    <Button x:Name="btnCalenderShowReservation" Height="40" Margin="278,362,458,266" Content="Load All Reservation" FontFamily="Arial Black" Click="btnCalenderShowReservation_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Reservation">

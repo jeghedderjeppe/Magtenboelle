@@ -145,9 +145,7 @@ namespace tabWindows
 
         }
 
-     
-
-        private void btnCalenderShow_Click(object sender, RoutedEventArgs e)
+        private void btnCalenderShowEvents_Click(object sender, RoutedEventArgs e)
         {
 
             try
@@ -155,20 +153,39 @@ namespace tabWindows
                 using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
                 {
                     string line = sr.ReadToEnd(); //Declare line variable and sets ReadToEnd to it
-                    Console.WriteLine(line);//Write string line to the end
+
                     listBoxCalender.Items.Add(line);//Add our string "line" to listbox
                 }
             }
             catch (Exception)
             {
                 MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
-               
+
             }
             
-            
-        
-           
         }
+
+        private void btnCalenderShowReservation_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
+                {
+                    string line = sr.ReadToEnd(); //Declare line variable and sets ReadToEnd to it
+
+                    listBoxCalender.Items.Add(line);//Add our string "line" to listbox
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
+
+            }
+        }
+
+     
+
+  
         //New User Controls Ends......
     }
 }
