@@ -1,0 +1,20 @@
+﻿<Window x:Class="tabWindows.EventInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EventInformation" Height="575" Width="300">
+    <Grid>
+        <Label Content="Antal deltagere:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,277,0,0" Width="120"/>
+        <Label Content="Event navn:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,20,0,0" Width="120"/>
+        <TextBox x:Name="txtEventInfoNavn1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="59,308,0,0"/>
+        <TextBox x:Name="txtEventInfoNavn" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="59,51,0,0"/>
+        <Button x:Name="btnEventInfoSaveEdit" Content="Gem ændringer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="104,509,0,-10"/>
+        <Button x:Name="btnEventInfoCancel" Content="Annulér" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="207,509,0,-10"/>
+        <Label Content="Event Beskrivelse:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,140,0,0" Width="120"/>
+        <TextBox x:Name="txtEventInfoBeskrivelse" HorizontalAlignment="Left" Height="101" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="59,171,0,0"/>
+        <Label Content="Dato for event:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,79,0,0" Width="120"/>
+        <TextBox x:Name="txtEventInfoDato" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="59,110,0,0"/>
+        <ListBox x:Name="listBoxEventInfoDeltagere" HorizontalAlignment="Left" Height="119" Margin="59,367,0,0" VerticalAlignment="Top" Width="143"/>
+        <Label Content="En liste over alle deltagere:" HorizontalAlignment="Left" Margin="59,336,0,0" VerticalAlignment="Top" Width="152"/>
+
+    </Grid>
+</Window>

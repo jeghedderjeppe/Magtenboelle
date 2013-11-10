@@ -59,7 +59,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="BBRservationsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomerInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventInformation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,6 +79,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BBRservationsInfo.xaml.cs">
+      <DependentUpon>BBRservationsInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="classes\BedAndBreakFastClass.cs" />
     <Compile Include="classes\CalendarFactory.cs" />
     <Compile Include="classes\CreateEventClass.cs" />
@@ -81,12 +92,22 @@
     <Compile Include="classes\EventRegistrationClass.cs" />
     <Compile Include="classes\MTB ReservationsKlasse.cs" />
     <Compile Include="classes\SaverAndLoader.cs" />
+    <Compile Include="EventInformation.xaml.cs">
+      <DependentUpon>EventInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MTBReservationsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MTBReservationsInfo.xaml.cs">
+      <DependentUpon>MTBReservationsInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
