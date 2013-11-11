@@ -21,12 +21,12 @@ namespace tabWindows
     {
          Customer customer;
          public CustomerInfo(Customer customerb)
-        {
+         {
             InitializeComponent();
             customer = customerb;
-        }
+         }
           public void SetPerson()
-        {
+          {
             txtEditUserFullName.Text = customer.Name;
             txtEditUserPhoneNum.Text = customer.PhoneNum.ToString();
             txtEditUserEmail.Text = customer.Email;              
@@ -34,31 +34,36 @@ namespace tabWindows
             txtEditUserCity.Text = customer.Adress.City;
             txtEditUserZipCode.Text = customer.Adress.PostCode.ToString();
             txtEditUserAge.Text = customer.Age.ToString();
-        }
-        private void btnSaveEditedUserInfo_Click(object sender, RoutedEventArgs e)
-        {
+          }
+          private void btnSaveEditedUserInfo_Click(object sender, RoutedEventArgs e)
+          {
               try
-            {
-                customer.Name = txtEditUserFullName.Text;
-                customer.PhoneNum = int.Parse(txtEditUserPhoneNum.Text);
-                customer.Email = txtEditUserEmail.Text;
-                customer.Adress.StreetName = txtEditUserAddress.Text;
-                customer.Adress.City = txtEditUserCity.Text;
-                customer.Adress.PostCode = int.Parse(txtEditUserZipCode.Text);
-                customer.Age = byte.Parse(txtEditUserAge.Text);
-                ParentWindow.listBCustomers.Items.Refresh();
-                this.Close();
-            }
-            catch 
-            {
-                MessageBox.Show("Alle input skal være korrekt format!");
-            }
-        }
-
+              {
+                  customer.Name = txtEditUserFullName.Text;
+                  customer.PhoneNum = int.Parse(txtEditUserPhoneNum.Text);
+                  customer.Email = txtEditUserEmail.Text;
+                  customer.Adress.StreetName = txtEditUserAddress.Text;
+                  customer.Adress.City = txtEditUserCity.Text;
+                  customer.Adress.PostCode = int.Parse(txtEditUserZipCode.Text);
+                  customer.Age = byte.Parse(txtEditUserAge.Text);
+                  ParentWindow.listBCustomers.Items.Refresh();
+                  this.Close();
+              }
+              catch
+              {
+                  MessageBox.Show("Alle input skal være korrekt format!");
+              }
+          }
+        
         public MainWindow ParentWindow { get; set; }
-    
-public  Customer customers { get; set; }}
+        public  Customer customers { get; set; }
+        
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
+    }
+}
 
 
     

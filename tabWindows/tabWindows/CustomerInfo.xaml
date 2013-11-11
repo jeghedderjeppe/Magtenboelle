@@ -19,7 +19,7 @@
         <TextBox x:Name="txtEditUserCity" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,183,0,0"/>
         <TextBox x:Name="txtEditUserAddress" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,124,0,0"/>
         <TextBox x:Name="txtEditUserFullName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,70,0,0"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="196,445,0,0" RenderTransformOrigin="-1.253,9.1" Grid.RowSpan="2"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="196,445,0,0" RenderTransformOrigin="-1.253,9.1" Grid.RowSpan="2" Click="btnExit_Click"/>
         <Button x:Name="btnSaveEditedUserInfo" Content="Gem ændring" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="106,445,0,0" Click="btnSaveEditedUserInfo_Click" Grid.RowSpan="2"/>
         <Label Content="Alder:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="71,386,0,0"/>
         <TextBox x:Name="txtEditUserAge" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,417,0,0"/>
