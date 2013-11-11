@@ -22,7 +22,7 @@ namespace tabWindows
     /// </summary>
     public partial class MainWindow : Window
     {   //liste til at holle alle instanser af Customer klassen
-        List<Customer> customerList = new List<Customer>();
+        public List<Customer> customerList = new List<Customer>();
         //liste til at holde alle instanser af CreateEventKlassen
         List<CreateEventClass> eventRservationsListe = new List<CreateEventClass>();
         byte age = 0;
@@ -36,7 +36,7 @@ namespace tabWindows
             customerList.Add(jens);
             listBCustomers.ItemsSource = customerList;
         }
-		//Dette er lavet af Simon
+		
         //New User Controls....
         private void CbboxNewUserAge_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

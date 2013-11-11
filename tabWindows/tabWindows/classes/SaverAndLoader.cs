@@ -8,9 +8,14 @@ using Newtonsoft.Json;
 
 namespace tabWindows {
 	class SaverAndLoader {
-		public static void Load() {
+		public static void LoadCustomer() {
 			List<Customer> customer = JsonStringToObject(ReadFromFile("customer-json.txt"));
 		}
+
+		public static void SaveCustomer(List<Customer> customer) {
+			ObjectToJsonString(customer);
+		}
+
 
 		private static String ReadFromFile(string fileName) {
 			string fileString;
@@ -28,8 +33,8 @@ namespace tabWindows {
 			}
 		}
 
-		public static void ObjectToJsonString(List<Customer> customer) {
-			string source = JsonConvert.SerializeObject(customer);
+		public static void ObjectToJsonString(List<Customer> listObject) {
+			string source = JsonConvert.SerializeObject(listObject);
 			//Console.WriteLine(source);
 			WriteToFile(source, @"customer-json.txt");
 		}
