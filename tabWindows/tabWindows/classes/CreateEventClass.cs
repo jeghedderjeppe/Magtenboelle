@@ -21,7 +21,7 @@ namespace Event_Oprettelse_Tilmelding
         //backend fields
         int _id;
         string _name;
-        int _date;
+        DateTime _date;
         int _numberOfParticipant;
         double _pricePrPerson;
 

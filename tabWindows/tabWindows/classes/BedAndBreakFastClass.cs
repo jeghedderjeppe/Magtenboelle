@@ -9,13 +9,13 @@ namespace WpfApplication1
     class BedAndBreakFastClass
     {
         //Constructor 
-        public BedAndBreakFastClass(string firstname, string lastname, string pets, string customersplans )
+        public BedAndBreakFastClass(DateTime date, string firstname, string lastname, string pets, string customersplans )
         {
              Firstname = firstname;
              Lastname = lastname;
              Pets = pets;
              Customersplans = customersplans;
-
+             Date = date;
         }
 
         //Backend Fields
@@ -23,6 +23,13 @@ namespace WpfApplication1
         string _lastname;
         string _pets;
         string customersplans;
+        DateTime _date;
+
+        public DateTime Date
+        {
+            get { return _date; }
+            set { _date = value; }
+        }
 
         public string Customersplans
         {

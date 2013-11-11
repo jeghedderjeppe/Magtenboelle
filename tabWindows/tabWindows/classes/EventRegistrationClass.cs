@@ -23,6 +23,7 @@ namespace Event_Oprettelse_Tilmelding
         int _numberOfParticipant;
         double _pricePrPerson;
         string _suggestion;
+        DateTime _date;
 
         //property with backend fields
         public string Name
