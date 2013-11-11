@@ -9,10 +9,10 @@ namespace Event_Oprettelse_Tilmelding
     public class CreateEventClass
     {
         //constructor
-        public CreateEventClass(int id, string name, int date, int numberOfParticipant, double pricePrPerson)
+        public CreateEventClass(int id, string eventName, int date, int numberOfParticipant, double pricePrPerson)
         {
             Id = id;
-            Name = name;
+            Name = eventName;
             Date = date;
             NumberOfParticipant = numberOfParticipant;
             PricePrPerson = pricePrPerson;

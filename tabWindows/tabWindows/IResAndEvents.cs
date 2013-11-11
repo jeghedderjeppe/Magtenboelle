@@ -8,5 +8,7 @@ namespace tabWindows
 {
     interface IResAndEvents
     {
+        string Name;
+        DateTime date;
     }
 }

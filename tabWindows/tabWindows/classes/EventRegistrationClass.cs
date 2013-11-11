@@ -10,27 +10,37 @@ namespace Event_Oprettelse_Tilmelding
     public class EventRegistrationClass
     {
         //constructor
-        public EventRegistrationClass(string name, int numberOfParticipant, double pricePrPerson, string suggestion)
+        public EventRegistrationClass(string firstName, string lastName, int numberOfParticipant, double pricePrPerson, string suggestion)
         {
-            Name = name;
+            FirstName = firstName;
+            LastName = lastName;
             NumberOfParticipant = numberOfParticipant;
             PricePrPerson = pricePrPerson;
             Suggestion = suggestion;
         }
         
         //backend fields
-        string _name;
+        
         int _numberOfParticipant;
         double _pricePrPerson;
         string _suggestion;
         DateTime _date;
+        string _firstName;
+        string _lastName;
 
         //property with backend fields
-        public string Name
+        public string FirstName
         {
-            get { return _name; }
-            set { _name = value; }
+            get { return _firstName; }
+            set { _firstName = value; }
         }
+
+        public string LastName
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
+        }
+
         public int NumberOfParticipant
         {
             get { return _numberOfParticipant; }

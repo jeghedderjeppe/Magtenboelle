@@ -12,14 +12,20 @@ namespace MTBClass
         double _weight;
         bool _memberOfCycleUnion;
         DateTime _date;
+        string _firstName;
+        string _lastName;
+      
+       
 
       
         //En constructor til de kunder, som gerne vil bestille tis på MTB-banen(uden at leje cykler)
-        public MTB_ReservationsKlasse(DateTime date, int age, bool memberOfCycleUnion)
+        public MTB_ReservationsKlasse(string firstName, string lastName, DateTime date, int age, bool memberOfCycleUnion)
         {
             Age = age;
             MemberOfCycleUnion = memberOfCycleUnion;
             Date = date;
+            FirstName = firstName;
+            LastName = lastName;
 
         }
 
@@ -55,6 +61,17 @@ namespace MTBClass
             get { return _date; }
             set { _date = value; }
         }
+      
+        public string FirstName
+        {
+            get { return _firstName; }
+            set { _firstName = value; }
+        }
 
+        public string LastName
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
+        }
     }
 }
