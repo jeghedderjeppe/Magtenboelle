@@ -148,20 +148,22 @@ namespace tabWindows
         private void btnCalenderShowEvents_Click(object sender, RoutedEventArgs e)
         {
 
-            try
-            {
-                using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
-                {
-                    string line = sr.ReadToEnd(); //Declare line variable and sets ReadToEnd to it
+            SaverAndLoader.Load(customerList);
 
-                    listBoxCalender.Items.Add(line);//Add our string "line" to listbox
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
+            //try
+            //{
+            //    using (StreamReader sr = new StreamReader("TEST.txt")) //Skal bare have den rigtige sti til Event og Reservationer
+            //    {
+            //        string line = sr.ReadToEnd(); //Declare line variable and sets ReadToEnd to it
 
-            }
+            //        listBoxCalender.Items.Add(line);//Add our string "line" to listbox
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
+
+            //}
             
         }
 
