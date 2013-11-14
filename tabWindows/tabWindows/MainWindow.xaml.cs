@@ -139,7 +139,7 @@ namespace tabWindows
 
         private void btnOpretEvent_Click(object sender, RoutedEventArgs e)
         {
-            CreateEventClass newEvent = new CreateEventClass(int.Parse(txtEventId.Text), txtEventNavn.Text, int.Parse(txtEventDato.Text), int.Parse(txtEventMaxDeltagere.Text), double.Parse(txtEventPrisPerPerson.Text));
+            CreateEventClass newEvent = new CreateEventClass(int.Parse(txtEventId.Text), txtEventNavn.Text, DateTime.Parse(txtEventDato.Text), int.Parse(txtEventMaxDeltagere.Text), double.Parse(txtEventPrisPerPerson.Text));
             eventRservationsListe.Add(newEvent);
             //SaveEventReservationToTxtFile();
 
@@ -148,7 +148,7 @@ namespace tabWindows
         private void btnCalenderShowEvents_Click(object sender, RoutedEventArgs e)
         {
 
-            SaverAndLoader.Load(customerList);
+         SaverAndLoader.LoadCustomer(customerList);
 
             //try
             //{
@@ -183,6 +183,11 @@ namespace tabWindows
                 MessageBox.Show("Can't Read Path");//Catch Exception if StreamReader Fails
 
             }
+        }
+
+        private void listBoxCalender_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
         }
 
      

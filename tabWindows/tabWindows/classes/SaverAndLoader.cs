@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace tabWindows {
 	class SaverAndLoader {
-		public static void LoadCustomer() {
+		public static void LoadCustomer(List<Customer> customerList) {
 			List<Customer> customer = JsonStringToObject(ReadFromFile("customer-json.txt"));
 		}
 

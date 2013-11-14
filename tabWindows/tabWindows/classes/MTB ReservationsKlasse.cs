@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using tabWindows;
 
-namespace MTBClass
+namespace MTBClass 
 {
-    class MTB_ReservationsKlasse
+    class MTB_ReservationsKlasse : IResAndEvents
     {   //3 variabler, som har en property hver.
         int _age;
         double _weight;

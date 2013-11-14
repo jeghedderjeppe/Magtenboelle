@@ -9,7 +9,7 @@ namespace Event_Oprettelse_Tilmelding
     public class CreateEventClass
     {
         //constructor
-        public CreateEventClass(int id, string eventName, int date, int numberOfParticipant, double pricePrPerson)
+        public CreateEventClass(int id, string eventName, DateTime date, int numberOfParticipant, double pricePrPerson)
         {
             Id = id;
             Name = eventName;
@@ -36,7 +36,7 @@ namespace Event_Oprettelse_Tilmelding
             get { return _name; }
             set { _name = value; }
         }
-        public int Date
+        public DateTime Date
         {
             get { return _date; }
             set { _date = value; }

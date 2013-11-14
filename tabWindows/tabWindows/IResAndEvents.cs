@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace tabWindows
 {
-    interface IResAndEvents
+    public interface IResAndEvents
     {
-        string Name;
-        DateTime date;
+
+        //Properties
+        string FirstName { get; set; }
+        string LastName { get; set; }
+        DateTime Date { get; set; }
     }
 }
